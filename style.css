@@ -206,6 +206,139 @@ a {
     margin-bottom: 60px;
     margin-top: 48px; 
 }
+.advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #222224;
+}
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 104px 0 104px;
+}
+.advantages__heading {
+    padding-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+.advantages__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+.advantages__img {
+    padding-bottom: 28px;
+}
+.subscription {
+    position: relative;
+}
+.subscription__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 223px;
+    align-items: center;
+}
+.staff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+    width: 360px;   
+
+}
+.staff__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.input-email {
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+.input-email__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.input-email__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+}
+.input-email__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+}
+.input-email__submit {
+    display: flex;
+}
+.input-email__submit__subscribe {
+    background: #E1E1E1;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 256px;
+    height: 49px;
+    padding: 0 22px;
+}
+.input-email__submit__btn {
+    background: #F16D7F;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 100px;
+    height: 49px;
+}
+.footer {
+    min-height: 79px;
+    background: #222224;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.rights {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.footer-right {
+    display: flex;
+    gap: 7px;
+}
+
+
+
+
+
 
 @media (max-width: 1024px) {
     .center {
