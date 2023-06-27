@@ -1,0 +1,217 @@
+:root {
+    --main-color-dark: #529484;
+    --main-color-light:#7fd79B;
+}
+
+.bg-color {
+    background-color: var(--main-color-dark);
+}
+.navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px var(--main-color-light);
+    font-weight: 700;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+
+}
+.navbar {
+    padding: 1.8rem 0;
+}
+
+.phone-link {
+    color: white;
+    text-decoration: none;
+
+}
+.phone-link i {
+    color: var(--main-color-light);
+    font-size: 22px;
+}
+.phone-link .phone {
+    font-weight: bold;
+}
+.main-head {
+    background: gainsboro;
+    background-image: url() 0 0 cover no-repeat;
+    padding: 120px 0;
+}
+.main-head .content {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    text-align: center;
+}
+.main-head .content hq {
+    color: white;
+    text-transform:  uppercase;
+    font-size: 42px;
+}
+.main-head .content p {
+    color: white;
+
+}
+.custom-btn {
+    text-decoration: none;
+    background: var(--main-color-light);
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    display: inline-block;
+}
+.services .card {
+   text-align: center; 
+}
+.services .card .card-title {
+    color: var(--main-color-dark);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+.services .card .custom-btn {
+    display: block;
+    padding: 15px 20px;
+}
+.numbers {
+    background: var(--main-color-dark);
+    color: white;
+    padding: 80px 0;
+}
+.numbers .number-content .number {
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.numbers .number-content p {
+    margin:  0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.callback {
+    padding: 80px 0;
+    text-align: center;
+}
+.callback .content-form {
+    border: 2px solid var(--main-color-dark);
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px;
+}
+.callback .content-form h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.callback .content-form p {
+    font-weight: 300;
+}
+.callback .content-form input {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 15px;
+    border: 1px solid transparent;
+    display: block;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    width: 100%;
+}
+.callback .content-form .is-invalid {
+    color: red;
+    border-color: red;
+    box-shadow: 0 0 8px rgba(255,0,0,0.5);
+
+}
+.error {
+    color: red;
+}
+.callback .content-form .custom-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    background: var(--main-color-dark);
+    display: block;
+    text-transform: none;
+    width: 90%;
+    margin: 0 auto;
+}
+.callback .content-form input[type='checkbox'] {
+    display: inline;
+    box-shadow: none;
+    width: auto;
+}
+footer {
+    background: var(--main-color-dark);
+    padding: 80px 0;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer .brand-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+}
+footer h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+}
+footer ul li {
+    margin-bottom: 8px;
+}
+footer ul li a {
+    font-weight: 300;
+}
+footer img {
+    width: 100%;
+}
+.li-icons{
+    display: inline-block;
+    margin: 10px 10px 0;
+}
+.link-li {
+    width: 50px;
+    height: 50px;
+    background: var(--main-color-light);
+    border-radius: 50%;
+    display: block;
+    line-height: 50px;
+    color: var(--main-color-dark);
+    font-size: 26px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+.swiper-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .main-head .content {
+        width: 90%;
+    }
+
+    .callback .content-form {
+        width: 100%;
+    }
+    .callback .content-form input {
+        margin-bottom: 10px;
+    }
+    .callback .content-form button {
+        margin: 0 auto;
+    }
+
+}

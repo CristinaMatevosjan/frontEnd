@@ -1,0 +1,87 @@
+/* верхний регистр */
+.title {
+    color: brown;
+    text-transform: uppercase;
+}
+
+/* цвет и подчеркнутый текст  */
+.sub_title {
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+/* класс лист и наследование от него для всех курсив, размер, квадратики */
+.list {
+    font-style: italic; 
+    font-size: 18px;
+    list-style-type: square; 
+}
+
+/* текст без засечек */
+#task1 {
+    font-family: sans-serif; 
+}
+
+/* схлопнуть двойные границы у таблицы */
+.table {
+    width: 500px;
+    border-collapse: collapse; 
+
+}
+
+.table thead {
+    background-color: #f0f1f4;
+}
+/* заливка фона и выравнивание текста по стороне и цвет */
+.table tfoot {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: right;
+}
+/* оконтовка толщина цвет линия  */
+.table td {
+    border: 3px solid #ccc ;
+}
+.table th {
+    border: 3px solid #ccc ;
+}
+
+/* ****************************************************************************** */
+
+
+#task3{
+    background-color: #f8f8f8;
+    }
+
+#task3 form {
+    width:  320 px;
+    background-color: #ffffff;
+    padding: 15 px;
+    /* внутренний отступ со всех сторон 4 */
+    margin: 0 auto ; 
+    /* внешний отступ по середине */
+}
+
+
+#task3 form input {
+    display: block;
+    /* поменять поведение элемента на странице */
+    width: 100%;
+    /* по все ширине блочный элемент сделали */
+    padding: 10px;
+    /* внутренний отступ */
+    box-sizing: border-box;
+    /* это свойство учбирает проблему блочных элементов  */
+    border: 1px solid #ccc;
+    /* рамка у полей ввода с цветом сплошная */
+    margin-bottom: 5 px;
+    /* отступ за рамками полей  */
+   
+}
+
+#task3 form input[type="submit"] {
+  /* селектор по атрибуту используем  */  
+  background-color: #1cbc11;
+}
+
+

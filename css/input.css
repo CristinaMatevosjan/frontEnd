@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-group input {
+    border: 1px solid #222;
+    padding: 15px 10px;
+    /* первая цифра для сверху и снизу вторая доя право лево */
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    /* кругление краев  */
+    padding-right: 40px;
+    /* чтобы текст не наезжал на иконку */
+}
+
+::placeholder {
+    color: #222;
+    /* псевдоэлемент */
+}
+
+.form-group {
+    position: relative;
+    /* теперь позиц-е работает относительно родительского элемента этого */
+    width: 20%;
+    margin: 0 auto;
+    /* теперь то что в теге див занимает 20 % от страницы и лежит посередине */
+}
+
+.form-group i {
+    position: absolute;
+   
+    right: 10px;
+    top: 24px;
+}

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    /* сбросили все стили */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background: #80edff;
+    display: flex;
+    /* теперь элемент мэйн стал флекс контейнером, */
+     /* те ее вывели из базового потока */
+    justify-content: center;
+    /* выравнивание элементов по основной оси */
+    align-items: center;
+    /* выравнивание по поперечной оси и теперь карточкаа по центру */
+    
+}
+
+.container {
+    background: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.45);
+    /* тень для блочного элементва  карточки параметры: смещение по оси х по оси устепень размытия и цвет прозрачности */
+    display: flex;
+    /* сделали флекс контейнером */
+    align-items: center;
+    justify-content: center;
+    /* выравнивание по поперечной и основной оси элементов */
+    margin: 30px;
+}
+
+.image {
+    background: url("https://images.unsplash.com/photo-1684444161762-95fbabc9a766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=857&q=80") center center / cover no-repeat;
+    /* расположение по центру по оси х и у, ковер стараемся вместить полностью и не повторять */
+    height: 420px;
+    width: 100%;
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+    /* отступы у текста внешние  */
+
+}
+
+.line {
+    display: block;
+    /* делаем элемент блочным */
+    width: 50px;
+    height: 5px;
+    background: #ff3434;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    /* убираем нижнее подчеркивание  */
+    text-transform: uppercase;
+    color: #ff3434;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: all 1s ease;
+    /* замедление 1 с */
+    border-bottom: 1px solid transparent;
+
+}
+
+a:hover {
+    /* псевдокласс состояние ссылки при наведении курсора */
+    border-bottom: 1px solid #ff3434;
+
+}
+
+
+
+

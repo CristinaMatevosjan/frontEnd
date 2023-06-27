@@ -1,0 +1,23 @@
+/* верхний регистр */
+.title {
+    color: brown;
+    text-transform: uppercase;
+}
+
+/* цвет и подчеркнутый текст  */
+.sub_title {
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+/* класс лист и наследование от него для всех курсив, размер, квадратики */
+.list {
+    font-style: italic; 
+    font-size: 18px;
+    list-style-type: square; 
+}
+
+/* текст без засечек */
+#task1 {
+    font-family: sans-serif; 
+}

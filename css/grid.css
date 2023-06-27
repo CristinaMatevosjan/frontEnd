@@ -1,0 +1,59 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "header header header"
+    "hero hero hero"
+    "menu main main"
+    "menu banner banner"
+    "menu extra image"
+    ;
+
+}
+
+.box {
+    padding: 30px;
+    text-transform: uppercase;
+    background: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box1 {
+    grid-area: header;
+    background: yellow;
+}
+
+.box2 {
+    grid-area: hero;
+    background: darkblue;
+}
+
+.box3 {
+    grid-area: menu;
+    background: orange;
+}
+
+.box4 {
+    grid-area: main;
+    background: gray;
+}
+
+.box5 {
+    grid-area: banner;
+    
+    background: green;
+}
+
+.box6 {
+    grid-area: extra;
+    background: purple;
+}
+
+.box7 {
+    grid-area: image;
+    background: teal;
+}

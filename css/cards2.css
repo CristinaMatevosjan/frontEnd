@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-family: sans-serif;
+    /* карточка это родитель а значит все ее свойства будут
+     наследвоаться дочерними элементами, если они не переопределены */
+    text-align: center;
+    padding: 20px 15px;
+    transition: all 0.25s ease;
+    /* замедленее сначала указываем для каких свойств(все изменяемые) время и временная функция */
+}
+
+.card i {
+    font-size: 60px;
+    margin: 15 px 0;
+}
+
+.card h2 {
+    text-transform: uppercase;
+
+}
+
+.card a {
+    display: block;
+    /* чтобы занимала всю достпную ширину  */
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+    color: white;
+    background: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.row {
+    display: flex;
+    /* всего одно свойство само посчитает сколько 
+    место должны занимать карточки и выстроит их в ряд */
+    /* независимо от того сколько карточек мы добавим */
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.card.twitter:hover {
+    /* есть элемент у которого в атрибуте класс установлено 2 класса и кард и твиттер */
+    background: #1D9BF0;
+    border-color: #1D9BF0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card.instagram:hover {
+    background: #C13584;
+    border-color: #C13584 ;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card.youtube:hover {
+    background:  #FF0000;
+    border-color: #FF0000;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card.twitter:hover a {
+    background: white;
+    color: #1D9BF0;
+}
+
+.card.instagram:hover a {
+    background: white;
+    color: #C13584;
+    
+}
+
+.card.youtube:hover a {
+    background: white;
+    color: #FF0000;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    /* чтобы при увеличении контейнер не выходил за края страницы и не появлялся горизонтальный скролл */
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        
+        /* при экране 900 строка карточек превращается в столбец */
+    }
+
+    .row .card {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,20 @@
+h2 {
+    background-color: aqua;
+}
+
+.f-left {
+    width: 250px;
+    border: 1px solid #000;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+    /* убрать обтекание совы по винни пуху; */
+}
