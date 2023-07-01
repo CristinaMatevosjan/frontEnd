@@ -501,7 +501,7 @@ a {
 }
 .input-email__submit__subscribe {
     background: #E1E1E1;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 20px 0 0 20px;
     width: 256px;
     height: 49px;
@@ -520,6 +520,7 @@ a {
     line-height: 17px;
     text-align: center;
 }
+
 .footer {
     min-height: 79px;
     background: #222224;
