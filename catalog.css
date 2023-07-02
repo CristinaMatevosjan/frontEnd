@@ -1,0 +1,9 @@
+.product__wrapper-img {
+  display: flex;
+  justify-content: center;
+  background: #F7E4E2;
+}
+
+.product__wrapper-img img {
+  width: auto;
+}/*# sourceMappingURL=catalog.css.map */

@@ -2,6 +2,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'product-style';
+@import 'catalog-style';
 
 @keyframes wobble-hor-top {
     0%,
@@ -79,6 +80,9 @@ body {
     font-family: 'Lato', sans-serif; 
     
 }
+body, html {
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;
@@ -92,11 +96,14 @@ a {
 .top {
     position: relative;
     overflow: hidden;
-  }
+    
+}
+
 .header {
     background: $backColor;
     min-height: 75px;
     @include flex(row,center,space-between,wrap);
+    position: relative;
     
     &__left {
         display: flex;
@@ -121,8 +128,6 @@ a {
       }
 
 }
-
-
 
 .mobail-menu {
     position: absolute;
