@@ -1,4 +1,6 @@
-
+.product-box {
+    margin-bottom: 128px;
+}
 
 .swiper {
     &__slide {
@@ -161,14 +163,23 @@
         width: 212px;
         height: 48px;
         padding-left: 24px;
-        &__to-cart {
-            color: $colorSelectSite;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
     }
+    .add-button:hover {
+            background-color: $colorSelectSite;
+            transition: all 0.2s;
+            color:$backLightColor ;
+        }
+    .add-button:hover svg path {
+        fill: $backLightColor;
+        transition: all 0.2s;
+    }
+              
 
 }
 

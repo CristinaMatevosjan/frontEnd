@@ -4,6 +4,7 @@
 @import 'product-style';
 @import 'catalog-style';
 @import 'cart-style';
+@import 'reg-style';
 
 @keyframes wobble-hor-top {
     0%,
@@ -110,18 +111,28 @@ a {
         display: flex;
         gap: 41px;
         align-items: center;
+        & svg:hover path {
+            fill: $colorSelectSite;
+            transition: all 0.2s;
+        }
     }
     
     &__right {
         display: flex;
         align-items: center;
         gap: 33px;
+
+        & svg:hover path {
+            fill: $colorSelectSite;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
     }
     
     &__checkbox {
         position: absolute;
-      visibility: hidden;
-      left: -9999999px;
+        visibility: hidden;
+        left: -9999999px;
     }
     
     &__checkbox:checked~.mobail-menu {
@@ -525,6 +536,12 @@ a {
         height: 49px;
         padding: 0 22px;
     }
+    &__submit-subscribe:focus::-moz-placeholder {
+        visibility: hidden;
+    }
+    &__submit-subscribe:focus::placeholder {
+        visibility: hidden;
+    }
     &__submit-btn {
         background: $colorSelectSite;
         border: none;
@@ -537,6 +554,11 @@ a {
         font-size: 14px;
         line-height: 17px;
         text-align: center;
+        cursor: pointer;
+    }
+    &__submit-btn:hover {
+        background: #E05C6E;
+        transition: background 0.2s;
     }
 }
 

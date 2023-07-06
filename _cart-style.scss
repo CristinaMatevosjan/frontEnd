@@ -136,6 +136,12 @@
         line-height: normal;
         padding: 13px 17px 15px 17px;
     }
+    &__input:focus::-moz-placeholder {
+        visibility: hidden;
+    }
+    &__input:focus::placeholder {
+        visibility: hidden;
+    }
     &__btn {
         height: 35px;
         color: #4A4A4A;
