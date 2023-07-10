@@ -137,5 +137,26 @@
         line-height: normal;
     }
 }
+@media (max-width:1024px) {
+    .registration {
+        gap: 22px;
+        margin-top: 40px;
+    }
+    .reg-right {
+        &__title {
+            font-size: 16px;
+            font-weight: 300;
 
+        }
+        &__loyalty {
+            font-size: 16px;
+            font-weight: 300;
+        }
+        &__text {
+            font-size: 16px;
+            font-weight: 300;
+    
+        }
+}
+}
 

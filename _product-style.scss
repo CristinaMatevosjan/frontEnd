@@ -183,3 +183,23 @@
 
 }
 
+@media (max-width:1024px) {
+    
+    .swiper-img {
+        width: 466px;
+    }
+    .offer {
+        padding: 64px 107px;
+        &__text {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .none {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+
+}
